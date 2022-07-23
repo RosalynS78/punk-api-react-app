@@ -9,8 +9,6 @@ class App extends Component {
 
     this.state = {
       arrayOfBeer: [],
-      // isClicked: true,
-      // likedBeer:
       style: {
         color: "#F26921",
       },
