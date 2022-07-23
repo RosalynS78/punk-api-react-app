@@ -37,4 +37,5 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #2A0308;
+  padding-bottom: 30px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBeer } from "react-icons/fa";
+import { FaHeart} from "react-icons/fa";
 
 const hrStyle = {
   backgroundColor: "teal",
@@ -12,9 +13,9 @@ function BeerCard(props) {
   return (
     <React.Fragment>
       <hr style={hrStyle}></hr>
-      <div className="beerMain">
+      <main className="beerMain">
         <h1>{props.name}</h1> <h6>{props.first_brewed} </h6>
-      </div>
+      </main>
       <hr style={hrStyle}></hr>
       <div className="beerAddition">
         <img
@@ -22,31 +23,26 @@ function BeerCard(props) {
           className="beerImage"
           src={props.image_url}
         ></img>
-
-        <p>
+        <section>
           <h2>Description</h2>
-          {props.description}
-          <p>
-            <span>
+          {props.description}      
               <h5>
-                {props.likeBeer}
+                {props.likeBeer}  <FaBeer />
+                <br></br>
                 <button onClick={handleClick}>
                   {" "}
-                  Cheers! <FaBeer />
+                  <FaHeart /> Cheers! 
                 </button>
               </h5>{" "}
-            </span>
-          </p>
-        </p>
+              </section>  
       </div>
-
       <div className="beerContainer">
-        <p>
+        <section>
           <h3>Good With:</h3>
           {props.food_pairing}
-        </p>
+          </section>
         <h2>{props.tagline}</h2>
-        <p>ABV:{props.abv}</p>
+        ABV:{props.abv}
       </div>
     </React.Fragment>
   );

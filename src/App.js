@@ -10,7 +10,7 @@ class App extends Component {
     this.state = {
       arrayOfBeer: [],
       style: {
-        color: "#F26921",
+        color: "red",
       },
     };
   }
@@ -21,15 +21,15 @@ class App extends Component {
         likeMe.likeBeer = "Love It?  ";
         return likeMe;
       });
-      console.log(arrayOfBeer);
+      // console.log(arrayOfBeer);
       this.setState({ arrayOfBeer });
     });
   }
 
   handleClick = (e) => {
-    console.log("this is working fine");
+    // console.log("this is working fine");
     e.preventDefault();
-    e.target.style.color = "#F26921";
+    e.target.style.color = "red";
     console.log(e.target);
   };
 
