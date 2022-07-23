@@ -24,7 +24,6 @@ body {
   text-align: left;
   padding: 40px;
   background-color: #7BA58D;
-  height: 500px;
 }
 
 .beerImage {
@@ -37,5 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #2A0308;
-  padding-bottom: 30px;
+  padding: 30px;
+  margin: 25px;
 }
