@@ -1,29 +1,36 @@
 body {
-  background-color: #7BA58D;
+  background-color: #934F1B;
   padding: 40px;
+  margin: 100px;
 }
 
 .beerMain {
-  background-color: #7BA58D;
+  background-color: #934F1B;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   text-align: center;
   font-family: 'Rye', cursive;
   color: #F8EBBE;
   font-size: 35px;
+  padding: 50px;
 }
 
 .beerAddition {
-  background-color: #934F1B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 40px;
+  background-color: #7BA58D;
+  height: 500px;
 }
 
 .beerImage {
   display: flex;
   height: 450px;
-  padding-left: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 100px;
 }
 
 .beerContainer {

@@ -22,24 +22,31 @@ function BeerCard(props) {
           className="beerImage"
           src={props.image_url}
         ></img>
+
+        <p>
+          <h2>Description</h2>
+          {props.description}
+          <p>
+            <span>
+              <h5>
+                {props.likeBeer}
+                <button onClick={handleClick}>
+                  {" "}
+                  Cheers! <FaBeer />
+                </button>
+              </h5>{" "}
+            </span>
+          </p>
+        </p>
       </div>
 
       <div className="beerContainer">
+        <p>
+          <h3>Good With:</h3>
+          {props.food_pairing}
+        </p>
         <h2>{props.tagline}</h2>
-        <p>
-          <span>ABV:{props.abv}</span>
-        </p>
-        <p>
-          <span>
-            <h5>
-              {props.likeBeer}
-              <button onClick={handleClick}>
-                {" "}
-                Cheers! <FaBeer />
-              </button>
-            </h5>{" "}
-          </span>
-        </p>
+        <p>ABV:{props.abv}</p>
       </div>
     </React.Fragment>
   );

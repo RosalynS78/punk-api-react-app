@@ -12,7 +12,7 @@ class App extends Component {
       // isClicked: true,
       // likedBeer:
       style: {
-        color: "#f28e1c",
+        color: "#F26921",
       },
     };
   }
@@ -31,7 +31,7 @@ class App extends Component {
   handleClick = (e) => {
     console.log("this is working fine");
     e.preventDefault();
-    e.target.style.color = "#f28e1c";
+    e.target.style.color = "#F26921";
     console.log(e.target);
   };
 
@@ -51,6 +51,8 @@ class App extends Component {
                   image_url={beer.image_url}
                   first_brewed={beer.first_brewed}
                   likeBeer={beer.likeBeer}
+                  description={beer.description}
+                  food_pairing={beer.food_pairing}
                   handleClick={this.handleClick}
                 />
               );
