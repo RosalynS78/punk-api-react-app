@@ -30,7 +30,7 @@ class App extends Component {
     // console.log("this is working fine");
     e.preventDefault();
     e.target.style.color = "red";
-    console.log(e.target);
+    // console.log(e.target);
   };
 
   render() {
