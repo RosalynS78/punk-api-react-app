@@ -27,9 +27,9 @@ function BeerCard(props) {
           <h2>Description</h2>
           {props.description}      
               <h5>
-                {props.likeBeer}  <FaBeer />
+                {props.likeBeer}  
                 <br></br>
-                <button onClick={handleClick}>
+                <button className="buttonStyle" onClick={handleClick}>
                   {" "}
                   <FaHeart /> Cheers! 
                 </button>
@@ -42,7 +42,8 @@ function BeerCard(props) {
           {props.food_pairing}
           </section>
         <h2>{props.tagline}</h2>
-        ABV:{props.abv}
+        <span><FaBeer /></span>
+        <h4>ABV: {props.abv}</h4>
       </div>
     </React.Fragment>
   );
